@@ -1,0 +1,311 @@
+
+header{
+    background-color: #4b5964;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+h1{
+    color: white;
+    margin-top: 2cm;
+    font-size: 54px;
+}
+.img1{
+    margin-left: 30px;
+    margin-bottom: 1cm;
+}
+
+
+
+.imagenes{
+    margin-left: 5cm ;
+    margin-top: 1cm;
+    display: grid;
+
+}
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 1vw;
+}
+nav{
+    margin-left: 19vw;
+    margin-top: 1cm;
+    font-size: 20px;
+}
+.parrafo{
+    color: rgba(255, 255, 255, 0.582);
+    width: 38vw;
+    font-size: 18px;
+}
+.parrafo1{
+    color: rgba(255, 255, 255, 0.884);
+}
+
+.boton1{
+    background-color: rgb(29, 145, 212);
+    color: white;
+    font-size: 15px;
+    height: 41px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.boton2{
+    height: 33px;
+    width: 89px;
+    background-color: rgb(29, 145, 212);
+    color: white;
+}
+
+a{
+    color: white;
+    font-size: 20px;
+}
+.compu{
+    margin-left: 10px;
+    width: 13px;
+}
+.or{
+    font-size: 25px;
+}
+.seccion3, .seccion4{
+    margin-right: 110px;
+    margin-left: 110px;
+    font-size: 30px;
+}
+.enlaces{
+    background-color: rgba(236, 234, 234, 0.774);
+    border: 2px solid rgba(197, 194, 194, 0.589);
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.marcas{
+    width: 72px;
+    height: 61px;
+    margin-top: 30px;
+
+}
+
+.seccion2{
+    display: grid;
+    margin-left: 2cm;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.flexible{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2cm;
+    align-items: center;
+    width: 25vw;
+}
+
+.img3{
+    width: 134px;
+}
+p{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.imagen4{
+    width: 20vw;
+    height: 200px;
+    margin-top: 30px;
+    animation-name: fotos;
+    animation-duration: 15s;
+    animation-timing-function: ease-out;
+    animation-delay: 0 ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes fotos{
+    0%{
+    transform: scale(.3);
+    border-radius: 70px;
+    }
+}
+.seccion3{
+    margin-top: 2cm;
+}
+
+.seccion4{
+    font-size: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.tam{
+    width: 210px;
+    margin-right: 20px;
+   
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.twiter{
+    margin-left: 3cm;
+}
+.color{
+    color: rgb(8, 183, 252);
+}
+h4{
+    font-size: 20px;
+    margin-left: 1cm;
+    
+}
+header p, h1, .twiter {
+    animation-duration: 5s;
+    animation-name: slidein;
+    
+}
+
+
+  
+@keyframes slidein {
+    from {
+        opacity: 2%;
+        width: 30%
+    }
+  
+    to {
+        opacity: 100%;
+        width: 100%;
+    }
+}
+
+
+
+footer{
+    border-top: 1px solid #9b9d9e9a;
+    height: 3cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Queries*/
+
+@media(max-width: 1200px){
+    .seccion3, .seccion4{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .imagenes{
+        margin-left: 2cm ;
+    }
+}
+
+@media(max-width: 992px){
+    .seccion3, .seccion4{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .imagenes{
+        margin-left: 1cm ;
+    }
+    h1{
+        font-size: 40px;
+    }
+    nav{
+        margin-left: 14vw;
+    }
+    .seccion4{
+        font-size: 19px;
+    }
+    .espacio h2{
+        font-size: 26px;
+    }
+    .espacio p{
+        font-size: 20px;
+        margin: 0px;
+    }
+    
+    .tam{
+    width: 178px;  
+    }
+}
+@media(max-width: 768px){
+    .imagenes img{
+        width: 36vw;
+        height: 75vh;
+        margin-top: 0px;
+    }
+    .imagenes .img1{
+        width: 24vw;
+        height: 10vh;
+        margin-bottom: 0px;
+    }
+    nav{
+        margin-left: 10vw;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .parrafo{
+        font-size: 18px;
+    }
+    .boton1{
+       margin-bottom: 13px;
+    }
+}
+@media(max-width: 576px){
+    header{
+        width: 109vw;
+    }
+    .enlaces{
+        width: 109vw;
+    }
+    .imagenes{
+        margin-left: 20px;
+        margin-top: 3cm;
+    }
+    h1{
+        font-size: 27px;
+    }
+    .parrafo{
+        font-size: 16px;
+        width: 48vw;
+
+    }
+    .seccion2{
+        margin-left: 1px;
+        width: 110vw;
+    }
+    .flexible{
+        width: 37vw;
+    }
+    .img3{
+        width: 100px;
+    }
+    .seccion3, .seccion4{
+        width: 90vw;
+    }
+    .imagen4{
+        width: 21vw;
+        height: 183px;
+    }
+    .twiter{
+        margin-left: 20px;
+        width: 32vw;
+    }
+    .tam{
+        width: 185px;
+    }
+    .flex{
+        width: 67vw;
+    }
+}
+
+
+
+
